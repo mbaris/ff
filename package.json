@@ -17,7 +17,8 @@
     "start:mocks": "binode --require ./mocks -- @remix-run/serve:remix-serve build",
     "test": "vitest",
     "typecheck": "tsc -b",
-    "validate": "run-p \"test -- --run\" lint typecheck"
+    "validate": "run-p \"test -- --run\" lint typecheck",
+    "prepare": "husky install"
   },
   "prettier": {},
   "eslintIgnore": [
@@ -60,13 +61,13 @@
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "happy-dom": "^6.0.4",
+    "husky": "^8.0.1",
     "msw": "^0.45.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.16",
     "prettier": "2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
     "prisma": "^4.2.1",
-    "start-server-and-test": "^1.14.0",
     "tailwindcss": "^3.1.8",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.1.0",
