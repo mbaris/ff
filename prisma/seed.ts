@@ -24,18 +24,18 @@ async function seed() {
     },
   });
 
-  await prisma.note.create({
+  await prisma.service.create({
     data: {
-      title: "My first note",
-      body: "Hello, world!",
+      name: "alert-service",
+      description: "Service to manage alerts",
       userId: user.id,
     },
   });
 
-  await prisma.note.create({
+  await prisma.service.create({
     data: {
-      title: "My second note",
-      body: "Hello, world!",
+      name: "monitor-service",
+      description: "Service to manage alerts",
       userId: user.id,
     },
   });
